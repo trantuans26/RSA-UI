@@ -111,8 +111,8 @@ import { useStore } from "../stores/store";
             "value": me.encryptInput
           })
           .then((resource) => {
-            me.encryptOutput = resource.data.result;
-            this.store.setPrivateKey(resource.data.privateKey);
+            me.encryptOutput = resource.data.ketQua;
+            this.store.setKhoa(resource.data.khoa);
           })
           .catch((error) => {
               console.log('error' + error.status);

@@ -5,6 +5,7 @@ export const useStore = defineStore("store",{
         input: null,
         privateKey: null,
         publicKey: null,
+        khoa: null,
     }),
 
     getters: {
@@ -18,6 +19,10 @@ export const useStore = defineStore("store",{
 
         getPublicKey() {
             return this.publicKey;
+        },
+
+        getKhoa() {
+            return this.khoa;
         },
     },
 
@@ -33,6 +38,10 @@ export const useStore = defineStore("store",{
         setPublicKey(value) {
             this.publicKey = value;
         },
+
+        setKhoa(value) {
+            this.khoa = value;
+        }
     },
 
 })

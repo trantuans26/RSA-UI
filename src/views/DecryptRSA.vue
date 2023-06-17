@@ -112,7 +112,7 @@ export default defineComponent({
       if (me.decryptInput) {
         axios.post(`${me.url}/decrypt`, {
           "textToDecrypt": me.decryptInput,
-          "privateKeyString": me.store.getPrivateKey
+          "khoa": me.store.getKhoa
         })
         .then((resource) => {
           me.decryptOutput = resource.data;
