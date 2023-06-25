@@ -83,7 +83,6 @@ import { useStore } from "../stores/store";
     methods: {
       onDecrypt() {
         this.store.setInput(this.encryptOutput);
-        this.$router.push('/giai-ma');
       },
 
       exportFile() {
@@ -125,6 +124,10 @@ import { useStore } from "../stores/store";
 
 <style lang="css" scoped>
 
+#container {
+  margin-right: 80px;
+}
+
 .header {
   font-size: 60px;
   color: rgb(0, 189, 126);
@@ -157,7 +160,7 @@ import { useStore } from "../stores/store";
 }
 
 .textarea {
-  width: 500px;
+  width: 360px;
   height: 160px;
   padding: 12px 20px;
   box-sizing: border-box;

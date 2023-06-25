@@ -162,7 +162,7 @@ export default defineComponent({
 }
 
 .textarea {
-  width: 500px;
+  width: 360px;
   height: 160px;
   padding: 12px 20px;
   box-sizing: border-box;
